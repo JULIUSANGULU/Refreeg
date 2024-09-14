@@ -16,7 +16,7 @@ const ThankYou = () => {
     // Optionally, stop confetti after a certain time
     const timer = setTimeout(() => {
       setConfettiRun(false);
-    }, 5000); // Confetti runs for 5 seconds
+    }, 10000); // Confetti runs for 5 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,7 +24,7 @@ const ThankYou = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center relative">
       {confettiRun && <Confetti width={width} height={height} />}
-      <FormProgressBar className= 'w-[20%]' />
+      <FormProgressBar currentStep={5} className= 'w-[20%]' />
       {/* Main Section */}
       <main className="flex flex-col items-center mt-8">
         <h1 className="text-4xl font-bold text-blue-600 mb-6 text-center">
