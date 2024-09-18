@@ -1,9 +1,9 @@
-import React from "react";
+
 import Link from "next/link";
 
 // Completed By Nomso
 
-const BookDrive = () => {
+export default function Page (){
   return (
     <div className="bg-white">
       {/* Header Section */}
@@ -20,7 +20,7 @@ const BookDrive = () => {
             of resources. Your contributions will make a tangible difference in
             the lives of children and learners around the world.
           </p>
-          <Link href="/donations?step=1">
+          <Link href="/bookdrive/donations?step=1">
             <button className="bg-blue-600 text-white px-8 py-3 rounded-full inline-flex items-center">
               Proceed to Donate
               <svg
@@ -93,4 +93,4 @@ const BookDrive = () => {
   );
 };
 
-export default BookDrive;
+
