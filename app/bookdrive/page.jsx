@@ -1,4 +1,4 @@
-import Header from "../../components/shared/Header";
+import Header from "/components/shared/Header";
 import Link from "next/link";
 import Footer from "../(root)/(home)/components/Footer";
 
